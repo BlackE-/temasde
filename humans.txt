@@ -1,0 +1,14 @@
+ 	 /* TEAM */                 
+    STUDIO-SUB : https://studio-sub.com                  
+    Twitter: @studio-sub.  
+    Location: Mexico City, MEX		
+
+    							
+    /* THANKS */	
+    Name:  
+
+                                
+    /* SITE */                    
+    Last update: 2021/01 
+    Standards: HTML5, CSS3, SCSS         
+    Components: GLIDE.JS, JAVASCRIPT.
