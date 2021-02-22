@@ -89,7 +89,7 @@
     <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" ref="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" > 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="script/intl-tel-input/css/intlTelInput.css">
     <!--<link rel="stylesheet" type="text/css" href="css/glide.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css" >

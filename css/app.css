@@ -1,6 +1,3 @@
-
-text/css app.css ( ASCII text )
-
 body {
   scroll-behavior: smooth;
   font: 100% "Space Mono", monospace;
@@ -34,6 +31,11 @@ header .container {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 550px) {
+  header .container {
+    grid-template-columns: 150px auto;
+  }
+}
 header #logoContainer .td_logo_header {
   width: 100%;
   z-index: 10;
@@ -54,9 +56,141 @@ header #logoContainer .icon-td_logo_header {
     font-size: 3em;
   }
 }
+header #menuDesktop {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
+  -webkit-animation: show 1s ease-out;
+  -moz-animation: show 1s ease-out;
+  -ms-animation: show 1s ease-out;
+  animation: show 1s ease-out;
+}
+
+header #menuDesktop a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 220ms ease-in;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+
+header #menuDesktop a span {
+  display: block;
+}
+
+header #menuDesktop a:hover span:nth-child(1) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.0909090909s;
+}
+
+header #menuDesktop a:hover span:nth-child(2) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.1818181818s;
+}
+
+header #menuDesktop a:hover span:nth-child(3) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.2727272727s;
+}
+
+header #menuDesktop a:hover span:nth-child(4) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.3636363636s;
+}
+
+header #menuDesktop a:hover span:nth-child(5) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.4545454545s;
+}
+
+header #menuDesktop a:hover span:nth-child(6) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.5454545455s;
+}
+
+header #menuDesktop a:hover span:nth-child(7) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.6363636364s;
+}
+
+header #menuDesktop a:hover span:nth-child(8) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.7272727273s;
+}
+
+header #menuDesktop a:hover span:nth-child(9) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.8181818182s;
+}
+
+header #menuDesktop a:hover span:nth-child(10) {
+  -webkit-animation: menuSpan 500ms ease-in;
+  -moz-animation: menuSpan 500ms ease-in;
+  -ms-animation: menuSpan 500ms ease-in;
+  animation: menuSpan 500ms ease-in;
+  animation-delay: 0.9090909091s;
+}
+
+header #menuDesktop a:after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 500ms ease-in;
+}
+
+header #menuDesktop a:hover {
+  color: #9e9ea4;
+}
+
+header #menuDesktop a:hover:after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  header #menuDesktop {
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header #menuDesktop {
+    display: none;
+  }
+}
 header #menuIconContainer {
   z-index: 100;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   align-items: center;
@@ -66,6 +200,11 @@ header #menuIconContainer {
   animation: show 1s ease-out;
 }
 
+@media only screen and (max-width: 700px) {
+  header #menuIconContainer {
+    display: grid;
+  }
+}
 header #menuIconContainer #menuIcon {
   width: 30px;
   height: 25px;
@@ -180,11 +319,6 @@ header #menuScreen .container a.active {
   color: #fff;
 }
 
-@media only screen and (max-width: 550px) {
-  header .container {
-    grid-template-columns: 150px auto;
-  }
-}
 footer {
   background: #1c1c2c;
   padding: 50px 0;
@@ -202,7 +336,7 @@ footer #footerBox {
 }
 
 footer .container .leftFooter {
-  text-align: center;
+  text-align: left;
   display: grid;
   grid-template-rows: 100px 50px 50px 50px;
   grid-gap: 20px;
@@ -214,6 +348,11 @@ footer .container .leftFooter .icon {
   font-size: 4em;
 }
 
+@media only screen and (max-width: 700px) {
+  footer .container .leftFooter {
+    text-align: center;
+  }
+}
 footer .container .rightFooter p {
   color: #ffffff;
 }
@@ -344,19 +483,19 @@ footer #piedepagina p {
 }
 
 .firstSection {
-  background-origin: 0 0;
-  background-size: cover;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: 75%;
+  background-size: auto;
+  background-repeat: no-repeat;
   color: #ffffff;
   height: 100vh;
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
 }
 
-.firstSection .container {
+.firstSectionContainer {
   max-width: 540px;
 }
 
@@ -406,6 +545,12 @@ footer #piedepagina p {
 }
 
 @media only screen and (max-width: 700px) {
+  .firstSection {
+    background-position: 0;
+    background-size: cover;
+    text-align: center;
+  }
+
   .firstSection .container {
     max-width: 300px;
   }
@@ -416,38 +561,69 @@ footer #piedepagina p {
 }
 .secondSection {
   padding: 100px 0;
-  max-width: 660px;
-  margin: 0 auto;
 }
 
 .secondSection .title {
+  max-width: 660px;
+  margin: 0px auto 50px auto;
   text-align: center;
   font-size: 2em;
   font-weight: 300;
 }
 
+.secondSection .title b {
+  font-weight: 700;
+}
+
 .secondSection .gridSoluciones {
   display: grid;
-  grid-template-columns: 100px 2fr;
-  align-items: center;
-}
-
-.secondSection .gridSoluciones div {
-  padding: 10px;
-}
-
-.secondSection .gridSoluciones div:nth-child(odd) {
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
-.secondSection .gridSoluciones div svg {
-  width: 100%;
+.secondSection .gridSoluciones .box {
+  display: grid;
+  padding: 10px;
+  grid-template-rows: 100px auto;
+}
+
+.secondSection .gridSoluciones .box div {
+  padding: 10px;
+}
+
+.secondSection .gridSoluciones .box p {
+  font-size: 1.2em;
+}
+
+.secondSection .gridSoluciones .box h2 {
+  margin-top: 0;
 }
 
 .secondSection .gridSoluciones .icon {
   font-size: 5em;
 }
 
+@media only screen and (max-width: 700px) {
+  .secondSection .gridSoluciones {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: unset;
+    text-align: left;
+  }
+
+  .secondSection .gridSoluciones .box {
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    grid-template-rows: unset;
+  }
+
+  .secondSection .gridSoluciones .box p {
+    font-size: 1em;
+  }
+
+  .secondSection .gridSoluciones .icon {
+    font-size: 5em;
+  }
+}
 #serviciosSection {
   padding: 0 0 100px 0;
 }
@@ -458,11 +634,10 @@ footer #piedepagina p {
 }
 
 #serviciosSection .gridServicios {
-  max-width: 660px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
 }
 
 #serviciosSection .gridServicios a {
@@ -473,35 +648,19 @@ footer #piedepagina p {
 }
 
 #serviciosSection .gridServicios a .box {
-  padding: 25px 10px;
+  padding: 50px 10px;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #serviciosSection .gridServicios a .box .icon {
-  font-size: 3em;
+  font-size: 4.3em;
   position: relative;
 }
 
 #serviciosSection .gridServicios a .box p {
   font-weight: 700;
   margin: 0;
-}
-
-#serviciosSection .gridServicios .telecomunicaciones {
-  position: relative;
-  color: #ffffff;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-#serviciosSection .gridServicios .telecomunicaciones .icon {
-  color: #ffffff;
-}
-
-#serviciosSection .gridServicios .telecomunicaciones div {
-  background: #1c1c2c;
-  color: #ffffff;
 }
 
 #serviciosSection .gridServicios .box.gris {
@@ -515,12 +674,34 @@ footer #piedepagina p {
 @media only screen and (max-width: 700px) {
   #serviciosSection .gridServicios {
     width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  #serviciosSection .gridServicios a .box {
+    padding: 25px 10px;
   }
 
   #serviciosSection .gridServicios a {
     font-size: 1em;
   }
 }
+#serviciosSection .gridServicios .telecomunicaciones {
+  position: relative;
+  color: #ffffff;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#serviciosSection .gridServicios .telecomunicaciones div {
+  background: #1c1c2c;
+  color: #ffffff;
+}
+
+#serviciosSection .gridServicios .telecomunicaciones .icon {
+  color: #ffffff;
+}
+
 #serviciosSection .gridServicios .telecomunicaciones .icon .line {
   position: absolute;
   height: 3px;
@@ -550,7 +731,7 @@ footer #piedepagina p {
 }
 
 #serviciosSection .gridServicios .sistemas svg {
-  width: 65px;
+  width: 54px;
 }
 
 #serviciosSection .gridServicios .sistemas .line {
@@ -615,6 +796,10 @@ footer #piedepagina p {
 }
 
 @media only screen and (max-width: 700px) {
+  #serviciosSection .gridServicios .sistemas svg {
+    width: 65px;
+  }
+
   #serviciosSection .gridServicios .automatizacion .icon {
     font-size: 5.3em !important;
   }
@@ -699,18 +884,6 @@ footer #piedepagina p {
   animation-delay: 1.3636363636s;
 }
 
-.fraseSection {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  height: 250px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #frase_index {
   background-image: url("../img/foto_frase.jpg");
 }
@@ -723,15 +896,40 @@ footer #piedepagina p {
   background-image: url("../img/foto_frase_ingenieria.jpg");
 }
 
+.fraseSection {
+  padding: 100px 0;
+  display: grid;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: auto;
+  background-position: 75%;
+  background-repeat: no-repeat;
+}
+
 .fraseSection p {
   font-size: 1.5em;
   color: #ffffff;
+  text-align: left;
+  max-width: 550px;
 }
 
 .fraseSection p b {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 700px) {
+  .fraseSection {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .glide__bullet {
   border: 2px solid #1d1d3b;
   width: 12px;
@@ -754,7 +952,7 @@ footer #piedepagina p {
 }
 
 #ingenieriaSection {
-  padding: 100px 0 0 0;
+  padding: 100px 0;
 }
 
 #ingenieriaSection h2 {
@@ -769,23 +967,17 @@ footer #piedepagina p {
 #ingenieriaSection .glide__slide {
   text-align: center;
   border-radius: 25px;
-}
-
-#ingenieriaSection .i-amphtml-carousel-slotted{
-    padding:0 20px;
-    display: grid;
-justify-content: center;
-align-content: center;
+  margin: 0 50px;
 }
 
 #ingenieriaSection .glide__slide .box {
   width: 90%;
-  height: 150px;
+  height: 250px;
   margin: 0 auto;
   max-width: 400px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 150px 1fr;
   justify-content: center;
   align-content: center;
   text-align: left;
@@ -802,7 +994,7 @@ align-content: center;
 }
 
 #ingenieriaSection .glide__slide .box .title {
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 700;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -812,7 +1004,7 @@ align-content: center;
 
 #ingenieriaSection .glide__slide .box .subtitle {
   text-decoration: underline;
-  font-size: 1em;
+  font-size: 1.5em;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -825,7 +1017,7 @@ align-content: center;
 
 #ingenieriaSection .glide__slide.detalles .box span {
   color: #1d1d3b;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 #ingenieriaSection .glide__slide.detalles .title {
@@ -842,7 +1034,7 @@ align-content: center;
 
 #ingenieriaSection .glide__slide.conceptual .box span {
   color: #ffffff;
-  font-size: 5em;
+  font-size: 7em;
 }
 
 #ingenieriaSection .glide__slide.conceptual .title {
@@ -859,7 +1051,7 @@ align-content: center;
 
 #ingenieriaSection .glide__slide.basica .box span {
   color: #1d1d3b;
-  font-size: 2.3em;
+  font-size: 2.8em;
 }
 
 #ingenieriaSection .glide__slide.basica .title {
@@ -870,19 +1062,18 @@ align-content: center;
   color: #ffffff;
 }
 
-#ingenieriaSection .glide__bullets {
-  display: none;
-}
-
 @media only screen and (max-width: 900px) {
   #ingenieriaSection .container {
     max-width: 100%;
     width: 100%;
   }
-  #ingenieriaSection .i-amphtml-carousel-slotted{padding:0 20px;}
 
-  #ingenieriaSection .glide__bullets {
-    display: block;
+  #ingenieriaSection .glide__slide {
+    margin: 0 25px;
+  }
+
+  #ingenieriaSection .glide__slide .box .title {
+    font-size: 1.5em !important;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -890,30 +1081,29 @@ align-content: center;
     grid-template-columns: 60px 1fr;
   }
 
-  #ingenieriaSection .conceptual .box span {
-    font-size: 3.5em;
-  }
-
-  #ingenieriaSection .basica .box span {
-    font-size: 2em;
-  }
-
-  #ingenieriaSection .detalles .box span {
-    font-size: 1.8em;
+  #ingenieriaSection .glide__slide .box {
+    grid-template-columns: 100px 1fr;
   }
 
   #ingenieriaSection .box .title {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
   }
 
   #ingenieriaSection .box .subtitle {
-    font-size: 0.7em;
+    font-size: 0.7em !important;
   }
-}
-@media only screen and (max-width: 460px) {
-    #ingenieriaSection .box {
-        height:80px !important;
-    }
+
+  #ingenieriaSection .conceptual .box span {
+    font-size: 5em !important;
+  }
+
+  #ingenieriaSection .basica .box span {
+    font-size: 2.3em !important;
+  }
+
+  #ingenieriaSection .detalles .box span {
+    font-size: 2.5em !important;
+  }
 }
 #clientesSection {
   padding: 0 0 100px 0;
@@ -926,38 +1116,25 @@ align-content: center;
 
 #clientesSection .item {
   text-align: center;
+  padding: 20px;
 }
 
-
-
-
-
-
-
-
-#secondSection .i-amphtml-carousel-slotted{
-    padding:0 20px;
-    display: grid;
-justify-content: center;
-align-content: center;
-}
-
-#secondSection .title {
+.glideSection#secondSection .title {
   font-size: 2em;
   text-align: center;
 }
 
-#secondSection .subtitle {
+.glideSection#secondSection .subtitle {
   font-size: 1.5em;
   text-align: center;
 }
 
-#secondSection .glide__slide {
+.glideSection#secondSection .glide__slide {
   text-align: center;
   border-radius: 25px;
-  padding:0 20px;
 }
-#secondSection .glide__slide .box {
+
+.glideSection#secondSection .glide__slide .box {
   width: 75%;
   height: 200px;
   margin: 0 auto;
@@ -967,101 +1144,101 @@ align-content: center;
   align-content: center;
 }
 
-#secondSection .glide__slide .box p {
+.glideSection#secondSection .glide__slide .box p {
   padding: 0;
   margin: 0;
 }
 
-#secondSection .glide__slide .box .title {
+.glideSection#secondSection .glide__slide .box .title {
   font-size: 1em;
   font-weight: 700;
 }
 
-#secondSection .glide__slide .box ul {
+.glideSection#secondSection .glide__slide .box ul {
   margin: 0;
   padding: 0;
 }
 
-#secondSection .glide__slide .box ul li {
+.glideSection#secondSection .glide__slide .box ul li {
   text-align: left;
   font-size: 0.9em;
   list-style-type: "-";
 }
 
-#secondSection .glide__slide.detalles {
+.glideSection#secondSection .glide__slide.detalles {
   border: 2px #1d1d3b dashed;
 }
 
-#secondSection .glide__slide.detalles .box span {
+.glideSection#secondSection .glide__slide.detalles .box span {
   color: #1d1d3b;
   font-size: 3.5em;
 }
 
-#secondSection .glide__slide.detalles .title {
+.glideSection#secondSection .glide__slide.detalles .title {
   color: #1d1d3b;
 }
 
-#secondSection .glide__slide.detalles ul li {
+.glideSection#secondSection .glide__slide.detalles ul li {
   color: #1d1d3b;
 }
 
-#secondSection .glide__slide.conceptual {
+.glideSection#secondSection .glide__slide.conceptual {
   background: #1d1d3b;
 }
 
-#secondSection .glide__slide.conceptual .box span {
+.glideSection#secondSection .glide__slide.conceptual .box span {
   color: #ffffff;
   font-size: 3.5em;
 }
 
-n#secondSection .glide__slide.conceptual .title {
+.glideSection#secondSection .glide__slide.conceptual .title {
   color: #ffffff;
 }
 
-#secondSection .glide__slide.conceptual ul li {
+.glideSection#secondSection .glide__slide.conceptual ul li {
   color: #ffffff;
 }
 
-#secondSection .glide__slide.basica {
+.glideSection#secondSection .glide__slide.basica {
   background: #9e9ea4;
 }
 
-#secondSection .glide__slide.basica .box span {
+.glideSection#secondSection .glide__slide.basica .box span {
   color: #1d1d3b;
   font-size: 3.5em;
 }
 
-#secondSection .glide__slide.basica .title {
+.glideSection#secondSection .glide__slide.basica .title {
   color: #020102;
 }
 
-#secondSection .glide__slide.basica ul li {
+.glideSection#secondSection .glide__slide.basica ul li {
   color: #020102;
 }
 
-#secondSection .glide__bullets {
+.glideSection#secondSection .glide__bullets {
   display: none;
 }
 
 @media only screen and (max-width: 900px) {
-  #secondSection .container {
+  .glideSection#secondSection .container {
     width: 100%;
   }
 
-  #secondSection .glide__bullets {
+  .glideSection#secondSection .glide__bullets {
     display: block;
   }
 }
 @media only screen and (max-width: 550px) {
-  #secondSection .box span {
+  .glideSection#secondSection .box span {
     font-size: 2em;
   }
 
-  #secondSection .box .title {
+  .glideSection#secondSection .box .title {
     font-size: 1.2em;
   }
 
-  #secondSection .box ul li {
+  .glideSection#secondSection .box ul li {
     font-size: 1em;
   }
 }
@@ -1388,7 +1565,6 @@ n#secondSection .glide__slide.conceptual .title {
 #ingenieriaCarousel a {
   text-decoration: none;
 }
-#ingenieriaCarousel .i-amphtml-carousel-slotted{padding:0 20px;}
 
 #ingenieriaCarousel .glide__slide {
   text-align: center;
@@ -1493,9 +1669,6 @@ n#secondSection .glide__slide.conceptual .title {
   #ingenieriaCarousel .container {
     max-width: 100%;
     width: 100%;
-  }
-  #ingenieriaSection .i-amphtml-carousel-slotted{
-      padding:0;
   }
 
   #ingenieriaCarousel .glide__bullets {
@@ -1677,6 +1850,61 @@ n#secondSection .glide__slide.conceptual .title {
   to {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes menuSpan {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@-moz-keyframes menuSpan {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@-ms-keyframes menuSpan {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@-o-keyframes menuSpan {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes menuSpan {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
   }
 }
 @-webkit-keyframes tele {
@@ -1971,4 +2199,3 @@ n#secondSection .glide__slide.conceptual .title {
 }
 
 /*# sourceMappingURL=app.css.map */
-

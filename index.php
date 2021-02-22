@@ -8,34 +8,42 @@
 		<?php include('header.php');?>
 		<section class="firstSection" id="indexSection">
 			<div class="container">
-				<h1><b><span>Diseñamos e</span><span> integramos </span><span>soluciones</span></b><span> de clase mundial</span></h1>
-				<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
+				<div class="firstSectionContainer">
+					<h1><b><span>Diseñamos e</span><span> integramos </span><span>soluciones</span></b><span> de clase mundial</span></h1>
+					<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
+				</div>
 			</div>
 		</section>
 		<section class="secondSection">
 			<div class="container">
 				<h2 class="animate title"><b>Implementamos soluciones</b> funcionales a la medida</h2>
 				<div class="gridSoluciones">
-					<div class="animate">
-						<span class="icon icon-TD_simplificamos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span></span>
+					<div class="box">
+						<div class="animate">
+							<span class="icon icon-TD_simplificamos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span></span>
+						</div>
+						<div>
+							<h2 class="animate">SIMPLIFICAMOS</h2>
+							<p class="animate">Soluciones de audio, video y control.</p>
+						</div>
 					</div>
-					<div>
-						<h2 class="animate">SIMPLIFICAMOS</h2>
-						<p class="animate">Soluciones de audio, video y control.</p>
+					<div class="box">
+						<div class="animate">
+							<span class="icon icon-TD_innovamo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+						</div>
+						<div>
+							<h2 class="animate">INNOVAMOS</h2>
+							<p class="animate">Anticipando la tecnología futura.</p>
+						</div>
 					</div>
-					<div class="animate">
-						<span class="icon icon-TD_innovamo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-					</div>
-					<div>
-						<h2 class="animate">INNOVAMOS</h2>
-						<p class="animate">Anticipando la tecnología futura.</p>
-					</div>
-					<div class="animate">
-						<span class="icon icon-TD_comunicamos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span>
-					</div>
-					<div>
-						<h2 class="animate">COMUNICAMOS</h2>
-						<p class="animate">Conectamos personas con cualquier dispositivo.</p>
+					<div class="box">
+						<div class="animate">
+							<span class="icon icon-TD_comunicamos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span>
+						</div>
+						<div>
+							<h2 class="animate">COMUNICAMOS</h2>
+							<p class="animate">Conectamos personas con cualquier dispositivo.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -101,53 +109,83 @@
 			</div>
 		</section>
 		<section id="ingenieriaSection">
-			<div class="container">
-				<h2 class="animate">INGENIERÍA</h2>
-				<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="responsive" loop="1" width="720" height="250" visible-count="(min-width: 800px) 3, 1" advance-count="(min-width: 700px) 3, 1">
-                    <div>
-                        <div class="glide__slide conceptual"> 
-                            <a href="ingenieria?conceptual">
-    							<div class="box">
-    								<span class="icon-TD_conceptual"></span>
-    								<p class="title">Ingeniería Conceptual</p>
-    								<p class="subtitle">CONOCE MÁS</p>
-    							</div>
-    						</a>
-    					</div>
+			<h2 class="animate">INGENIERÍA</h2>
+			<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" loop="1" layout="fixed-height" width="auto" height="300" visible-count="1.1" advance-count="1">
+                <div>
+                    <div class="glide__slide conceptual"> 
+                        <a href="ingenieria?conceptual">
+							<div class="box">
+								<span class="icon-TD_conceptual"></span>
+								<p class="title">Ingeniería Conceptual</p>
+								<p class="subtitle">CONOCE MÁS</p>
+							</div>
+						</a>
 					</div>
-					<div>
-                        <div class="glide__slide detalles">
-                            <a href="ingenieria?detalles">
-    							<div class="box">
-    								<span class="icon-TD_carousel_ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-    								<p class="title">Ingeniería de detalles</p>
-    								<p class="subtitle">CONOCE MÁS</p>
-    							</div>
-    						</a>
-                        </div>
+				</div>
+				<div>
+                    <div class="glide__slide detalles">
+                        <a href="ingenieria?detalles">
+							<div class="box">
+								<span class="icon-TD_carousel_ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+								<p class="title">Ingeniería de detalles</p>
+								<p class="subtitle">CONOCE MÁS</p>
+							</div>
+						</a>
                     </div>
-                    <div>
-                        <div class="glide__slide basica">
-                            <a href="ingenieria?basica">
-    							<div class="box">
-    								<span class="icon-TD_basicas"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-    								<p class="title">Ingeniería <br>Básica</p>
-    								<p class="subtitle">CONOCE MÁS</p>
-    							</div>
-    						</a>
-                        </div>
+                </div>
+                <div>
+                    <div class="glide__slide basica">
+                        <a href="ingenieria?basica">
+							<div class="box">
+								<span class="icon-TD_basicas"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+								<p class="title">Ingeniería <br>Básica</p>
+								<p class="subtitle">CONOCE MÁS</p>
+							</div>
+						</a>
                     </div>
-                </amp-base-carousel>
-			</div>
+                </div>
+            </amp-base-carousel>
 		</section>
 		<section id="clientesSection">
 			<div class="container">
 				<h2 class="title animate">CLIENTES</h2>
-				<amp-base-carousel class="gallery animate" layout="fixed-height" width="auto" height="50" advance-count="1" loop="false" visible-count="(min-width:700px) 3, 1" advance-count="(min-width: 700px) 3, 1"> 
-                    <div class="item"><img src="img/td_cliente_1.png" loading="crazy"/></div>
-                    <div class="item"><img src="img/td_cliente_2.png" loading="crazy"/></div>
-                    <div class="item"><img src="img/td_cliente_3.png" loading="crazy"/></div>
-                    <div class="item"><img src="img/td_cliente_4.png" loading="crazy"/></div>
+				<amp-base-carousel class="gallery animate" layout="fixed-height" width="auto" height="150" advance-count="1" loop="1" 
+				visible-count="(min-width:700px) 5, 1" advance-count="1"> 
+                    <div class="item">
+                    	<img src="img/td_cliente_1.png" loading="crazy"/>
+                    	<img src="img/td_cliente_1.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_2.png" loading="crazy"/>
+                    	<img src="img/td_cliente_2.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_3.png" loading="crazy"/>
+                    	<img src="img/td_cliente_3.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_4.png" loading="crazy"/>
+                    	<img src="img/td_cliente_4.png" loading="crazy"/>
+                    </div>
+
+                    <div class="item">
+                    	<img src="img/td_cliente_1.png" loading="crazy"/>
+                    	<img src="img/td_cliente_1.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_2.png" loading="crazy"/>
+                    	<img src="img/td_cliente_2.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_3.png" loading="crazy"/>
+                    	<img src="img/td_cliente_3.png" loading="crazy"/>
+                    </div>
+                    <div class="item">
+                    	<img src="img/td_cliente_4.png" loading="crazy"/>
+                    	<img src="img/td_cliente_4.png" loading="crazy"/>
+                    </div>
+
+                    
                   </amp-base-carousel>
 			</div>
 		</section>

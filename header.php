@@ -3,6 +3,11 @@
 			<div id="logoContainer">
 				<a href="/"><div class="td_logo_header"><span class="icon-td_logo_header"></span></div></a>
 			</div>
+			<div id="menuDesktop">
+				<a href="nosotros"><span>N</span><span>O</span><span>S</span><span>O</span><span>T</span><span>R</span><span>O</span><span>S</span></a>
+				<a href="servicios"><span>S</span><span>E</span><span>R</span><span>V</span><span>I</span><span>C</span><span>I</span><span>O</span><span>S</span></a>
+				<a href="ingenieria"><span>I</span><span>N</span><span>G</span><span>E</span><span>N</span><span>I</span><span>E</span><span>R</span><span>Í</span><span>A</span></a>
+			</div>
 			<div id="menuIconContainer">
 				<div id="menuIcon" class="">
 					<span></span>
