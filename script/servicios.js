@@ -1,20 +1,11 @@
 	const animeElements = document.querySelectorAll('.anime');
     for(animeElement of animeElements){observer.observe( animeElement );}
 
-	const glidePeek = new Glide('.peek', {
-		  type: 'carousel',
-		  breakpoints:{
-			900: {	
-				animationDuration: 1000,
-				focusAt: '1',
-				startAt: 1,
-				perView: 1,
-				peek: {before: 30,after: 30}
-			},
-	  		2000: { 
-	  			perView: 3,
-	  			peek: {before: 0,after: 0}
-	  		}
-		}
-	});
- 	glidePeek.mount();
+	const carouselIngenierias = document.querySelector('#ingenieriaSection .glide');
+	const resizecarouselIngenierias = () =>{
+		(window.innerWidth > 460) ? carouselIngenierias.style.height = "350px" : carouselIngenierias.style.height = "200px";
+		(window.innerWidth > 460) ? console.log('350') : console.log('200');
+	}
+
+	setTimeout(resizecarouselIngenierias,1000);
+	window.onresize = resizecarouselIngenierias;

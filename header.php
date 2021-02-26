@@ -1,7 +1,7 @@
 	<header id="header">
 		<div class="container">
 			<div id="logoContainer">
-				<a href="/"><div class="td_logo_header"><span class="icon-td_logo_header"></span></div></a>
+				<a href="/"><div class="td_logo_header"><span class="icon-temasde_logo_with_letters"></span></div></a>
 			</div>
 			<div id="menuDesktop">
 				<a href="nosotros"><span>N</span><span>O</span><span>S</span><span>O</span><span>T</span><span>R</span><span>O</span><span>S</span></a>

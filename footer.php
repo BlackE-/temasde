@@ -1,7 +1,7 @@
 	<footer id="footer">
 		<div class="container" id="footerBox">
 			<div class="leftFooter">
-				<span class="icon icon-td_logo_header"></span>
+				<span class="icon icon-temasde_logo_with_letters"></span>
 				<a href="mailto:contacto@temasde.com">contacto<b>@temasde</b>.com</a>
 				<a href="tel:5575888460">55-7588-8460</a>
 				<a href="https://goo.gl/maps/jddsLXLFEGz7RyPG9"><b>Calle Atlixco #82</b><br>Col.Condesa, CDMX, 06140</a>

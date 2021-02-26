@@ -46,13 +46,13 @@ header #logoContainer .td_logo_header {
   animation: show 1s ease-out;
 }
 
-header #logoContainer .icon-td_logo_header {
+header #logoContainer .icon-temasde_logo_with_letters {
   font-size: 5em;
   transition: font-size 300ms ease-in-out;
 }
 
 @media only screen and (max-width: 700px) {
-  header #logoContainer .icon-td_logo_header {
+  header #logoContainer .icon-temasde_logo_with_letters {
     font-size: 3em;
   }
 }
@@ -171,7 +171,7 @@ header #menuDesktop a:after {
 }
 
 header #menuDesktop a:hover {
-  color: #9e9ea4;
+  color: #d7d7d7;
 }
 
 header #menuDesktop a:hover:after {
@@ -521,7 +521,7 @@ footer #piedepagina p {
   width: 100%;
   font-weight: 700;
   margin: 20px auto;
-  background: #9e9ea4;
+  background: #acacac;
   color: #ffffff;
   border-radius: 20px;
   padding: 10px 20px;
@@ -541,7 +541,7 @@ footer #piedepagina p {
 
 .firstSection button:hover {
   background: #020102;
-  color: #9e9ea4;
+  color: #d7d7d7;
 }
 
 @media only screen and (max-width: 700px) {
@@ -575,6 +575,13 @@ footer #piedepagina p {
   font-weight: 700;
 }
 
+.secondSection .subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 550px;
+  margin: 50px auto;
+}
+
 .secondSection .gridSoluciones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -604,6 +611,10 @@ footer #piedepagina p {
 }
 
 @media only screen and (max-width: 700px) {
+  .secondSection {
+    padding: 50px 0;
+  }
+
   .secondSection .gridSoluciones {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: unset;
@@ -616,6 +627,14 @@ footer #piedepagina p {
     grid-template-rows: unset;
   }
 
+  .secondSection .gridSoluciones .box div {
+    padding: 0;
+  }
+
+  .secondSection .gridSoluciones .box div:first-child {
+    text-align: center;
+  }
+
   .secondSection .gridSoluciones .box p {
     font-size: 1em;
   }
@@ -623,106 +642,102 @@ footer #piedepagina p {
   .secondSection .gridSoluciones .icon {
     font-size: 5em;
   }
+
+  .secondSection .gridSoluciones .box h2 {
+    font-size: 1.2em;
+  }
 }
-#serviciosSection {
+#serviciosSectionIndex {
   padding: 0 0 100px 0;
 }
 
-#serviciosSection .title {
-  text-align: center;
-  font-size: 2em;
-}
-
-#serviciosSection .gridServicios {
+#serviciosSectionIndex .gridServicios {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
 }
 
-#serviciosSection .gridServicios a {
+#serviciosSectionIndex .gridServicios a {
   font-size: 1.5em;
   color: #020102;
   text-decoration: none;
   width: 100%;
 }
 
-#serviciosSection .gridServicios a .box {
+#serviciosSectionIndex .gridServicios a .box {
   padding: 50px 10px;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#serviciosSection .gridServicios a .box .icon {
+#serviciosSectionIndex .gridServicios a .box .icon {
   font-size: 4.3em;
   position: relative;
 }
 
-#serviciosSection .gridServicios a .box p {
+#serviciosSectionIndex .gridServicios a .box p {
   font-weight: 700;
   margin: 0;
 }
 
-#serviciosSection .gridServicios .box.gris {
-  background: #9e9ea4;
+#serviciosSectionIndex .gridServicios .box.gris {
+  background: #d7d7d7;
 }
 
-#serviciosSection .gridServicios .box.dash {
+#serviciosSectionIndex .gridServicios .box.dash {
   border: 3px #1c1c2c dashed;
 }
 
 @media only screen and (max-width: 700px) {
-  #serviciosSection .gridServicios {
+  #serviciosSectionIndex .gridServicios {
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
 
-  #serviciosSection .gridServicios a .box {
+  #serviciosSectionIndex .gridServicios a .box {
     padding: 25px 10px;
   }
 
-  #serviciosSection .gridServicios a {
+  #serviciosSectionIndex .gridServicios a {
     font-size: 1em;
   }
 }
-#serviciosSection .gridServicios .telecomunicaciones {
+#serviciosSectionIndex .gridServicios .telecomunicaciones {
   position: relative;
   color: #ffffff;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-#serviciosSection .gridServicios .telecomunicaciones div {
+#serviciosSectionIndex .gridServicios .telecomunicaciones div {
   background: #1c1c2c;
   color: #ffffff;
 }
 
-#serviciosSection .gridServicios .telecomunicaciones .icon {
+#serviciosSectionIndex .gridServicios .telecomunicaciones .icon {
   color: #ffffff;
 }
 
-#serviciosSection .gridServicios .telecomunicaciones .icon .line {
+#serviciosSectionIndex .gridServicios .telecomunicaciones .icon .line {
   position: absolute;
   height: 3px;
   background: #1c1c2c;
   border: 0;
-  top: 36px;
+  top: 53px;
   left: 19%;
 }
 
-#serviciosSection .gridServicios .telecomunicaciones:hover .icon .line {
+#serviciosSectionIndex .gridServicios .telecomunicaciones:hover .icon .line {
   -webkit-animation: tele 1s infinite;
   -moz-animation: tele 1s infinite;
   -ms-animation: tele 1s infinite;
   animation: tele 1s infinite;
 }
 
-#serviciosSection .gridServicios .control svg {
-  width: 50px;
-}
-
-#serviciosSection .gridServicios .control:hover .circlepath {
+#serviciosSectionIndex .gridServicios .control:hover .path2:before {
+  display: inline-block;
   transform-origin: 50% 50%;
   -webkit-animation: control 5s infinite;
   -moz-animation: control 5s infinite;
@@ -730,47 +745,125 @@ footer #piedepagina p {
   animation: control 5s infinite;
 }
 
-#serviciosSection .gridServicios .sistemas svg {
-  width: 54px;
+#serviciosSectionIndex .gridServicios .control:hover .path1:before {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  -webkit-animation: control 5s infinite;
+  -moz-animation: control 5s infinite;
+  -ms-animation: control 5s infinite;
+  animation: control 5s infinite;
 }
 
-#serviciosSection .gridServicios .sistemas .line {
+#serviciosSectionIndex .gridServicios .sistemas .box .icon {
+  font-size: 3.5em;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas .path2:before,
+#serviciosSectionIndex .gridServicios .sistemas .path3:before,
+#serviciosSectionIndex .gridServicios .sistemas .path4:before,
+#serviciosSectionIndex .gridServicios .sistemas .path5:before,
+#serviciosSectionIndex .gridServicios .sistemas .path6:before,
+#serviciosSectionIndex .gridServicios .sistemas .path7:before,
+#serviciosSectionIndex .gridServicios .sistemas .path12:before,
+#serviciosSectionIndex .gridServicios .sistemas .path13:before,
+#serviciosSectionIndex .gridServicios .sistemas .path14:before {
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-#serviciosSection .gridServicios .sistemas:hover .line {
+#serviciosSectionIndex .gridServicios .sistemas:hover .path12:before {
   opacity: 0;
 }
 
-#serviciosSection .gridServicios .sistemas:hover .move {
+#serviciosSectionIndex .gridServicios .sistemas:hover .path13:before {
+  opacity: 0;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path14:before {
+  opacity: 0;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path2:before {
+  -webkit-animation: sistemasLines 1s infinite;
+  -moz-animation: sistemasLines 1s infinite;
+  -ms-animation: sistemasLines 1s infinite;
+  animation: sistemasLines 1s infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path3:before {
+  -webkit-animation: sistemasLines 1s 300ms infinite;
+  -moz-animation: sistemasLines 1s 300ms infinite;
+  -ms-animation: sistemasLines 1s 300ms infinite;
+  animation: sistemasLines 1s 300ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path4:before {
+  -webkit-animation: sistemasLines 1s 400ms infinite;
+  -moz-animation: sistemasLines 1s 400ms infinite;
+  -ms-animation: sistemasLines 1s 400ms infinite;
+  animation: sistemasLines 1s 400ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path5:before {
+  -webkit-animation: sistemasLines 1s 500ms infinite;
+  -moz-animation: sistemasLines 1s 500ms infinite;
+  -ms-animation: sistemasLines 1s 500ms infinite;
+  animation: sistemasLines 1s 500ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path6:before {
+  -webkit-animation: sistemasLines 1s 600ms infinite;
+  -moz-animation: sistemasLines 1s 600ms infinite;
+  -ms-animation: sistemasLines 1s 600ms infinite;
+  animation: sistemasLines 1s 600ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path6:before {
+  -webkit-animation: sistemasLines 1s 700ms infinite;
+  -moz-animation: sistemasLines 1s 700ms infinite;
+  -ms-animation: sistemasLines 1s 700ms infinite;
+  animation: sistemasLines 1s 700ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path1:before {
+  display: inline-block;
   -webkit-animation: sistemasMove 1s infinite;
   -moz-animation: sistemasMove 1s infinite;
   -ms-animation: sistemasMove 1s infinite;
   animation: sistemasMove 1s infinite;
 }
 
-#serviciosSection .gridServicios .sistemas:hover .move2 {
+#serviciosSectionIndex .gridServicios .sistemas:hover .path9:before {
+  display: inline-block;
   -webkit-animation: sistemasMove 1s 300ms infinite;
   -moz-animation: sistemasMove 1s 300ms infinite;
   -ms-animation: sistemasMove 1s 300ms infinite;
   animation: sistemasMove 1s 300ms infinite;
 }
 
-#serviciosSection .gridServicios .sistemas:hover .move3 {
+#serviciosSectionIndex .gridServicios .sistemas:hover .path10:before {
+  display: inline-block;
+  -webkit-animation: sistemasMove 1s 300ms infinite;
+  -moz-animation: sistemasMove 1s 300ms infinite;
+  -ms-animation: sistemasMove 1s 300ms infinite;
+  animation: sistemasMove 1s 300ms infinite;
+}
+
+#serviciosSectionIndex .gridServicios .sistemas:hover .path11:before {
+  display: inline-block;
   -webkit-animation: sistemasMove 1s 600ms infinite;
   -moz-animation: sistemasMove 1s 600ms infinite;
   -ms-animation: sistemasMove 1s 600ms infinite;
   animation: sistemasMove 1s 600ms infinite;
 }
 
-#serviciosSection .gridServicios .seguridad svg {
+#serviciosSectionIndex .gridServicios .seguridad svg {
   width: 65px;
 }
 
-#serviciosSection .gridServicios .seguridad .circle {
+#serviciosSectionIndex .gridServicios .seguridad .circle {
   fill: #2a294c;
   stroke: none;
   stroke-width: 0px;
@@ -781,7 +874,7 @@ footer #piedepagina p {
   transition: 0.5s ease-in-out;
 }
 
-#serviciosSection .gridServicios .seguridad:hover .circle {
+#serviciosSectionIndex .gridServicios .seguridad:hover .circle {
   fill: none;
   stroke: #2a294c;
   stroke-width: 0.9px;
@@ -791,20 +884,20 @@ footer #piedepagina p {
   animation: seguridad 3s infinite;
 }
 
-#serviciosSection .gridServicios .automatizacion .icon {
+#serviciosSectionIndex .gridServicios .automatizacion .icon {
   font-size: 3.6em !important;
 }
 
 @media only screen and (max-width: 700px) {
-  #serviciosSection .gridServicios .sistemas svg {
+  #serviciosSectionIndex .gridServicios .sistemas svg {
     width: 65px;
   }
 
-  #serviciosSection .gridServicios .automatizacion .icon {
+  #serviciosSectionIndex .gridServicios .automatizacion .icon {
     font-size: 5.3em !important;
   }
 }
-#serviciosSection .gridServicios .automatizacion:hover .path6 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path6:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -812,7 +905,7 @@ footer #piedepagina p {
   animation-delay: 0.5454545455s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path7 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path7:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -820,7 +913,7 @@ footer #piedepagina p {
   animation-delay: 0.6363636364s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path8 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path8:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -828,7 +921,7 @@ footer #piedepagina p {
   animation-delay: 0.7272727273s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path9 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path9:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -836,7 +929,7 @@ footer #piedepagina p {
   animation-delay: 0.8181818182s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path10 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path10:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -844,7 +937,7 @@ footer #piedepagina p {
   animation-delay: 0.9090909091s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path11 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path11:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -852,7 +945,7 @@ footer #piedepagina p {
   animation-delay: 1s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path12 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path12:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -860,7 +953,7 @@ footer #piedepagina p {
   animation-delay: 1.0909090909s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path13 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path13:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -868,7 +961,7 @@ footer #piedepagina p {
   animation-delay: 1.1818181818s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path14 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path14:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
@@ -876,12 +969,20 @@ footer #piedepagina p {
   animation-delay: 1.2727272727s;
 }
 
-#serviciosSection .gridServicios .automatizacion:hover .path15 {
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path15:before {
   -webkit-animation: automatizacion 1s infinite;
   -moz-animation: automatizacion 1s infinite;
   -ms-animation: automatizacion 1s infinite;
   animation: automatizacion 1s infinite;
   animation-delay: 1.3636363636s;
+}
+
+#serviciosSectionIndex .gridServicios .automatizacion:hover .path16:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1.4545454545s;
 }
 
 #frase_index {
@@ -919,6 +1020,7 @@ footer #piedepagina p {
 
 @media only screen and (max-width: 700px) {
   .fraseSection {
+    padding: 50px 0;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -972,7 +1074,7 @@ footer #piedepagina p {
 
 #ingenieriaSection .glide__slide .box {
   width: 90%;
-  height: 250px;
+  height: 300px;
   margin: 0 auto;
   max-width: 400px;
   padding: 20px;
@@ -1046,7 +1148,7 @@ footer #piedepagina p {
 }
 
 #ingenieriaSection .glide__slide.basica {
-  background: #9e9ea4;
+  background: #d7d7d7;
 }
 
 #ingenieriaSection .glide__slide.basica .box span {
@@ -1063,11 +1165,6 @@ footer #piedepagina p {
 }
 
 @media only screen and (max-width: 900px) {
-  #ingenieriaSection .container {
-    max-width: 100%;
-    width: 100%;
-  }
-
   #ingenieriaSection .glide__slide {
     margin: 0 25px;
   }
@@ -1077,19 +1174,26 @@ footer #piedepagina p {
   }
 }
 @media only screen and (max-width: 550px) {
-  #ingenieriaSection .box {
-    grid-template-columns: 60px 1fr;
+  #ingenieriaSection {
+    padding: 50px 0;
+  }
+
+  #ingenieriaSection .i-amphtml-carousel-slotted {
+    display: contents;
+    height: 100%;
+    justify-items: center;
   }
 
   #ingenieriaSection .glide__slide .box {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 85px 1fr;
+    height: 150px;
   }
 
-  #ingenieriaSection .box .title {
+  #ingenieriaSection .glide__slide .box .title {
     font-size: 1.2em !important;
   }
 
-  #ingenieriaSection .box .subtitle {
+  #ingenieriaSection .glide__slide .box .subtitle {
     font-size: 0.7em !important;
   }
 
@@ -1098,7 +1202,7 @@ footer #piedepagina p {
   }
 
   #ingenieriaSection .basica .box span {
-    font-size: 2.3em !important;
+    font-size: 2.2em !important;
   }
 
   #ingenieriaSection .detalles .box span {
@@ -1114,159 +1218,196 @@ footer #piedepagina p {
   letter-spacing: 0.3em;
 }
 
-#clientesSection .item {
-  text-align: center;
+#clientesSection .gallery .item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
-.glideSection#secondSection .title {
-  font-size: 2em;
-  text-align: center;
+#clientesSection .gallery .item img {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.glideSection#secondSection .subtitle {
-  font-size: 1.5em;
-  text-align: center;
-}
+@media only screen and (max-width: 700px) {
+  #clientesSection {
+    padding: 0 0 25px 0;
+  }
 
-.glideSection#secondSection .glide__slide {
+  #clientesSection .gallery .item img {
+    width: 50%;
+  }
+}
+#nosotrosSection .glide__slide {
   text-align: center;
   border-radius: 25px;
+  margin: 0 50px;
 }
 
-.glideSection#secondSection .glide__slide .box {
-  width: 75%;
-  height: 200px;
+#nosotrosSection .glide__slide .box {
+  width: 90%;
+  height: 300px;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 400px;
+  padding: 20px;
   display: grid;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 
-.glideSection#secondSection .glide__slide .box p {
-  padding: 0;
-  margin: 0;
-}
-
-.glideSection#secondSection .glide__slide .box .title {
-  font-size: 1em;
+#nosotrosSection .glide__slide .box .title {
+  font-size: 1.5em;
   font-weight: 700;
-}
-
-.glideSection#secondSection .glide__slide .box ul {
   margin: 0;
-  padding: 0;
 }
 
-.glideSection#secondSection .glide__slide .box ul li {
+#nosotrosSection .glide__slide .box ul {
+  padding: 0;
+  max-width: 200px;
+}
+
+#nosotrosSection .glide__slide .box ul li {
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1em;
   list-style-type: "-";
 }
 
-.glideSection#secondSection .glide__slide.detalles {
+#nosotrosSection .glide__slide.detalles {
   border: 2px #1d1d3b dashed;
 }
 
-.glideSection#secondSection .glide__slide.detalles .box span {
+#nosotrosSection .glide__slide.detalles .box span {
   color: #1d1d3b;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
-.glideSection#secondSection .glide__slide.detalles .title {
-  color: #1d1d3b;
-}
-
-.glideSection#secondSection .glide__slide.detalles ul li {
+#nosotrosSection .glide__slide.detalles .title {
   color: #1d1d3b;
 }
 
-.glideSection#secondSection .glide__slide.conceptual {
+#nosotrosSection .glide__slide.detalles ul li {
+  color: #1d1d3b;
+}
+
+#nosotrosSection .glide__slide.conceptual {
   background: #1d1d3b;
 }
 
-.glideSection#secondSection .glide__slide.conceptual .box span {
+#nosotrosSection .glide__slide.conceptual .box span {
   color: #ffffff;
-  font-size: 3.5em;
+  font-size: 8em;
 }
 
-.glideSection#secondSection .glide__slide.conceptual .title {
-  color: #ffffff;
-}
-
-.glideSection#secondSection .glide__slide.conceptual ul li {
+#nosotrosSection .glide__slide.conceptual .title {
   color: #ffffff;
 }
 
-.glideSection#secondSection .glide__slide.basica {
-  background: #9e9ea4;
+#nosotrosSection .glide__slide.conceptual ul li {
+  color: #ffffff;
 }
 
-.glideSection#secondSection .glide__slide.basica .box span {
+#nosotrosSection .glide__slide.basica {
+  background: #d7d7d7;
+}
+
+#nosotrosSection .glide__slide.basica .box span {
   color: #1d1d3b;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
-.glideSection#secondSection .glide__slide.basica .title {
+#nosotrosSection .glide__slide.basica .title {
   color: #020102;
 }
 
-.glideSection#secondSection .glide__slide.basica ul li {
+#nosotrosSection .glide__slide.basica ul li {
   color: #020102;
 }
 
-.glideSection#secondSection .glide__bullets {
+#nosotrosSection .glide__bullets {
   display: none;
 }
 
 @media only screen and (max-width: 900px) {
-  .glideSection#secondSection .container {
-    width: 100%;
-  }
-
-  .glideSection#secondSection .glide__bullets {
+  #nosotrosSection .glide__bullets {
     display: block;
   }
 }
 @media only screen and (max-width: 550px) {
-  .glideSection#secondSection .box span {
+  #nosotrosSection .glide__slide {
+    margin: 0 25px;
+  }
+
+  #nosotrosSection .box {
+    padding: 10px;
+  }
+
+  #nosotrosSection .box span {
     font-size: 2em;
   }
 
-  .glideSection#secondSection .box .title {
+  #nosotrosSection .glide__slide .box .title {
     font-size: 1.2em;
   }
 
-  .glideSection#secondSection .box ul li {
+  #nosotrosSection .glide__slide .box .box ul li {
     font-size: 1em;
   }
+
+  #nosotrosSection .glide__slide.detalles .box span {
+    font-size: 2.5em;
+  }
+
+  #nosotrosSection .glide__slide.conceptual .box span {
+    font-size: 5em;
+  }
+
+  #nosotrosSection .glide__slide.basica .box span {
+    font-size: 2.3em;
+  }
 }
-#boxContainer {
+#sectoresSection {
   text-align: center;
   padding-bottom: 100px;
 }
 
-#boxContainer p {
+#sectoresSection p {
   font-size: 1.5em;
 }
 
-#boxContainer .box2 {
+#sectoresSection .sectoresContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#sectoresSection .box2 {
   margin: 70px auto;
   max-width: 200px;
   font-size: 1.5em;
 }
 
-#boxContainer .box2 .icon {
+#sectoresSection .box2 .icon {
   font-size: 3em;
 }
 
-#boxContainer .box2 ul li {
+#sectoresSection .box2 ul li {
   text-align: left;
   font-size: 0.9em;
   list-style-type: "-";
 }
 
+@media only screen and (max-width: 900px) {
+  #sectoresSection .box2 {
+    margin: 20px auto;
+  }
+
+  #sectoresSection .sectoresContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .anime {
   opacity: 0;
   -webkit-transition: 500ms ease-in;
@@ -1288,50 +1429,61 @@ footer #piedepagina p {
   transform: translate(0, 0);
 }
 
-.secondSection .subtitle {
-  font-size: 1.5em;
-  text-align: center;
+#serviciosSection {
+  padding: 100px 0;
 }
 
-.serviciosBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  grid-gap: 20px;
-  font-size: 1.5em;
+#serviciosSection .serviciosBox {
   color: #020102;
   width: 100%;
 }
 
-.serviciosBox .box {
+#serviciosSection .serviciosBox .anime {
+  width: 90%;
+  margin: 50px auto;
+}
+
+#serviciosSection .serviciosBox .box {
+  width: 90%;
   border-radius: 20px;
   padding: 25px 10px;
-  text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.serviciosBox .box .icon {
-  font-size: 3em;
+#serviciosSection .serviciosBox .box .servicioContainer {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+#serviciosSection .serviciosBox .box .icon {
+  font-size: 5em;
   position: relative;
 }
 
-.serviciosBox .box p {
+#serviciosSection .serviciosBox .box p {
   font-weight: 700;
   margin: 0;
-  font-size: 0.7em;
+  font-size: 1.5em;
 }
 
-.serviciosBox .box ul li {
+#serviciosSection .serviciosBox .box ul {
+  padding: 0;
+  margin: 0;
+}
+
+#serviciosSection .serviciosBox .box ul li {
   text-align: left;
-  font-size: 0.6em;
+  font-size: 1em;
   list-style-type: "-";
 }
 
-.serviciosBox .box.gris {
-  background: #9e9ea4;
+#serviciosSection .serviciosBox .box.gris {
+  background: #d7d7d7;
 }
 
-.serviciosBox .box.dash {
+#serviciosSection .serviciosBox .box.dash {
   border: 3px #1c1c2c dashed;
 }
 
@@ -1340,53 +1492,160 @@ footer #piedepagina p {
     transform: translate(-50px, 0);
   }
 
-  .serviciosBox {
+  #serviciosSection .serviciosBox .box .servicioContainer {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  #serviciosSection .gridServicios {
-    width: 100%;
+  #serviciosSection .serviciosBox .box p {
+    font-size: 1.3em;
   }
 
-  #serviciosSection .gridServicios a {
-    font-size: 1em;
+  #serviciosSection .serviciosBox .box ul {
+    padding: 0 0 0 20px;
   }
 }
-.serviciosBox .telecomunicaciones {
+#serviciosSection .serviciosBox .telecomunicaciones {
   position: relative;
   color: #ffffff;
 }
 
-.serviciosBox .telecomunicaciones .box {
-  background: #9e9ea4;
+#serviciosSection .serviciosBox .telecomunicaciones .box {
+  background: #d7d7d7;
   color: #1c1c2c;
 }
 
-.serviciosBox .telecomunicaciones .icon {
+#serviciosSection .serviciosBox .telecomunicaciones .icon {
   color: #1c1c2c;
 }
 
-.serviciosBox .telecomunicaciones .icon .line {
+#serviciosSection .serviciosBox .telecomunicaciones .icon .line {
   position: absolute;
-  height: 3px;
-  background: #9e9ea4;
+  height: 4px;
+  background: #d7d7d7;
   border: 0;
-  top: 36px;
+  top: 40px;
   left: 19%;
 }
 
-.serviciosBox .telecomunicaciones:hover .icon .line {
+#serviciosSection .serviciosBox .telecomunicaciones:hover .icon .line {
   -webkit-animation: tele 1s infinite;
   -moz-animation: tele 1s infinite;
   -ms-animation: tele 1s infinite;
   animation: tele 1s infinite;
 }
 
-.serviciosBox .seguridad svg {
-  width: 65px;
+#serviciosSection .serviciosBox .sistemas .box .icon {
+  font-size: 6em;
 }
 
-.serviciosBox .seguridad .circle {
+#serviciosSection .serviciosBox .sistemas .path2:before,
+#serviciosSection .serviciosBox .sistemas .path3:before,
+#serviciosSection .serviciosBox .sistemas .path4:before,
+#serviciosSection .serviciosBox .sistemas .path5:before,
+#serviciosSection .serviciosBox .sistemas .path6:before,
+#serviciosSection .serviciosBox .sistemas .path7:before,
+#serviciosSection .serviciosBox .sistemas .path12:before,
+#serviciosSection .serviciosBox .sistemas .path13:before,
+#serviciosSection .serviciosBox .sistemas .path14:before {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path12:before {
+  opacity: 0;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path13:before {
+  opacity: 0;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path14:before {
+  opacity: 0;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path2:before {
+  -webkit-animation: sistemasLines 1s infinite;
+  -moz-animation: sistemasLines 1s infinite;
+  -ms-animation: sistemasLines 1s infinite;
+  animation: sistemasLines 1s infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path3:before {
+  -webkit-animation: sistemasLines 1s 300ms infinite;
+  -moz-animation: sistemasLines 1s 300ms infinite;
+  -ms-animation: sistemasLines 1s 300ms infinite;
+  animation: sistemasLines 1s 300ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path4:before {
+  -webkit-animation: sistemasLines 1s 400ms infinite;
+  -moz-animation: sistemasLines 1s 400ms infinite;
+  -ms-animation: sistemasLines 1s 400ms infinite;
+  animation: sistemasLines 1s 400ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path5:before {
+  -webkit-animation: sistemasLines 1s 500ms infinite;
+  -moz-animation: sistemasLines 1s 500ms infinite;
+  -ms-animation: sistemasLines 1s 500ms infinite;
+  animation: sistemasLines 1s 500ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path6:before {
+  -webkit-animation: sistemasLines 1s 600ms infinite;
+  -moz-animation: sistemasLines 1s 600ms infinite;
+  -ms-animation: sistemasLines 1s 600ms infinite;
+  animation: sistemasLines 1s 600ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path6:before {
+  -webkit-animation: sistemasLines 1s 700ms infinite;
+  -moz-animation: sistemasLines 1s 700ms infinite;
+  -ms-animation: sistemasLines 1s 700ms infinite;
+  animation: sistemasLines 1s 700ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path1:before {
+  display: inline-block;
+  -webkit-animation: sistemasMove 1s infinite;
+  -moz-animation: sistemasMove 1s infinite;
+  -ms-animation: sistemasMove 1s infinite;
+  animation: sistemasMove 1s infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path9:before {
+  display: inline-block;
+  -webkit-animation: sistemasMove 1s 300ms infinite;
+  -moz-animation: sistemasMove 1s 300ms infinite;
+  -ms-animation: sistemasMove 1s 300ms infinite;
+  animation: sistemasMove 1s 300ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path10:before {
+  display: inline-block;
+  -webkit-animation: sistemasMove 1s 300ms infinite;
+  -moz-animation: sistemasMove 1s 300ms infinite;
+  -ms-animation: sistemasMove 1s 300ms infinite;
+  animation: sistemasMove 1s 300ms infinite;
+}
+
+#serviciosSection .serviciosBox .sistemas:hover .path11:before {
+  display: inline-block;
+  -webkit-animation: sistemasMove 1s 600ms infinite;
+  -moz-animation: sistemasMove 1s 600ms infinite;
+  -ms-animation: sistemasMove 1s 600ms infinite;
+  animation: sistemasMove 1s 600ms infinite;
+}
+
+#serviciosSection .serviciosBox .seguridad svg {
+  width: 75px;
+  margin: 0 auto;
+}
+
+#serviciosSection .serviciosBox .seguridad .circle {
   fill: #2a294c;
   stroke: none;
   stroke-width: 0px;
@@ -1397,7 +1656,7 @@ footer #piedepagina p {
   transition: 0.5s ease-in-out;
 }
 
-.serviciosBox .seguridad:hover .circle {
+#serviciosSection .serviciosBox .seguridad:hover .circle {
   fill: none;
   stroke: #2a294c;
   stroke-width: 0.9px;
@@ -1407,105 +1666,8 @@ footer #piedepagina p {
   animation: seguridad 3s infinite;
 }
 
-.serviciosBox .automatizacion .box {
-  background: #1c1c2c;
-  color: #ffffff;
-}
-
-.serviciosBox .automatizacion .icon {
-  font-size: 3.6em !important;
-}
-
-@media only screen and (max-width: 700px) {
-  .serviciosBox .automatizacion .icon {
-    font-size: 5.3em !important;
-  }
-}
-.serviciosBox .automatizacion:hover .path6 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 0.5454545455s;
-}
-
-.serviciosBox .automatizacion:hover .path7 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 0.6363636364s;
-}
-
-.serviciosBox .automatizacion:hover .path8 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 0.7272727273s;
-}
-
-.serviciosBox .automatizacion:hover .path9 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 0.8181818182s;
-}
-
-.serviciosBox .automatizacion:hover .path10 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 0.9090909091s;
-}
-
-.serviciosBox .automatizacion:hover .path11 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 1s;
-}
-
-.serviciosBox .automatizacion:hover .path12 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 1.0909090909s;
-}
-
-.serviciosBox .automatizacion:hover .path13 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 1.1818181818s;
-}
-
-.serviciosBox .automatizacion:hover .path14 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 1.2727272727s;
-}
-
-.serviciosBox .automatizacion:hover .path15 {
-  -webkit-animation: automatizacion 1s infinite;
-  -moz-animation: automatizacion 1s infinite;
-  -ms-animation: automatizacion 1s infinite;
-  animation: automatizacion 1s infinite;
-  animation-delay: 1.3636363636s;
-}
-
-.serviciosBox .control svg {
-  width: 50px;
-}
-
-.serviciosBox .control:hover .circlepath {
+#serviciosSection .serviciosBox .control:hover .path2:before {
+  display: inline-block;
   transform-origin: 50% 50%;
   -webkit-animation: control 5s infinite;
   -moz-animation: control 5s infinite;
@@ -1513,40 +1675,103 @@ footer #piedepagina p {
   animation: control 5s infinite;
 }
 
-.serviciosBox .sistemas svg {
-  width: 65px;
+#serviciosSection .serviciosBox .control:hover .path1:before {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  -webkit-animation: control 5s infinite;
+  -moz-animation: control 5s infinite;
+  -ms-animation: control 5s infinite;
+  animation: control 5s infinite;
 }
 
-.serviciosBox .sistemas .line {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+#serviciosSection .serviciosBox .automatizacion .box {
+  background: #1c1c2c;
+  color: #ffffff;
 }
 
-.serviciosBox .sistemas:hover .line {
-  opacity: 0;
+@media only screen and (max-width: 700px) {
+  .serviciosBox .automatizacion .icon {
+    font-size: 5.3em !important;
+  }
+}
+#serviciosSection .serviciosBox .automatizacion:hover .path6:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 0.5454545455s;
 }
 
-.serviciosBox .sistemas:hover .move {
-  -webkit-animation: sistemasMove 1s infinite;
-  -moz-animation: sistemasMove 1s infinite;
-  -ms-animation: sistemasMove 1s infinite;
-  animation: sistemasMove 1s infinite;
+#serviciosSection .serviciosBox .automatizacion:hover .path7:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 0.6363636364s;
 }
 
-.serviciosBox .sistemas:hover .move2 {
-  -webkit-animation: sistemasMove 1s 300ms infinite;
-  -moz-animation: sistemasMove 1s 300ms infinite;
-  -ms-animation: sistemasMove 1s 300ms infinite;
-  animation: sistemasMove 1s 300ms infinite;
+#serviciosSection .serviciosBox .automatizacion:hover .path8:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 0.7272727273s;
 }
 
-.serviciosBox .sistemas:hover .move3 {
-  -webkit-animation: sistemasMove 1s 600ms infinite;
-  -moz-animation: sistemasMove 1s 600ms infinite;
-  -ms-animation: sistemasMove 1s 600ms infinite;
-  animation: sistemasMove 1s 600ms infinite;
+#serviciosSection .serviciosBox .automatizacion:hover .path9:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 0.8181818182s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path10:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 0.9090909091s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path11:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path12:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1.0909090909s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path13:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1.1818181818s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path14:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1.2727272727s;
+}
+
+#serviciosSection .serviciosBox .automatizacion:hover .path15:before {
+  -webkit-animation: automatizacion 1s infinite;
+  -moz-animation: automatizacion 1s infinite;
+  -ms-animation: automatizacion 1s infinite;
+  animation: automatizacion 1s infinite;
+  animation-delay: 1.3636363636s;
 }
 
 #ingenieriaCarousel {
@@ -1569,45 +1794,33 @@ footer #piedepagina p {
 #ingenieriaCarousel .glide__slide {
   text-align: center;
   border-radius: 25px;
+  margin: 0 50px;
 }
 
 #ingenieriaCarousel .glide__slide .box {
   width: 90%;
+  height: 300px;
   margin: 0 auto;
-  max-width: 400px;
   padding: 20px;
   display: grid;
-  grid-template-rows: 100px auto auto;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
 
-#ingenieriaCarousel .glide__slide .box p {
-  padding: 0;
+#ingenieriaCarousel .glide__slide .box .title {
+  font-size: 1.5em;
   margin: 0;
 }
 
 #ingenieriaCarousel .glide__slide .box ul {
   padding: 0;
-  margin: 0;
 }
 
 #ingenieriaCarousel .glide__slide .box ul li {
   text-align: left;
-  text-align: left;
-  font-size: 0.9em;
-  list-style-type: "-";
-}
-
-#ingenieriaCarousel .glide__slide .box .title {
-  font-size: 1.4em;
-  font-weight: 700;
-}
-
-#ingenieriaCarousel .glide__slide .box .subtitle {
-  text-decoration: underline;
   font-size: 1em;
+  list-style-type: "-";
 }
 
 #ingenieriaCarousel .glide__slide.detalles {
@@ -1645,12 +1858,12 @@ footer #piedepagina p {
 }
 
 #ingenieriaCarousel .glide__slide.basica {
-  background: #9e9ea4;
+  background: #d7d7d7;
 }
 
 #ingenieriaCarousel .glide__slide.basica .box span {
   color: #1d1d3b;
-  font-size: 2.3em;
+  font-size: 2.5em;
 }
 
 #ingenieriaCarousel .glide__slide.basica .title {
@@ -1666,34 +1879,41 @@ footer #piedepagina p {
 }
 
 @media only screen and (max-width: 900px) {
-  #ingenieriaCarousel .container {
-    max-width: 100%;
-    width: 100%;
-  }
-
   #ingenieriaCarousel .glide__bullets {
     display: block;
   }
 }
 @media only screen and (max-width: 550px) {
-  #ingenieriaCarousel .conceptual .box span {
-    font-size: 3.5em;
+  #ingenieriaCarousel .glide__slide {
+    margin: 0 25px;
   }
 
-  #ingenieriaCarousel .basica .box span {
+  #ingenieriaCarousel .box {
+    padding: 10px;
+  }
+
+  #ingenieriaCarousel .box span {
     font-size: 2em;
   }
 
-  #ingenieriaCarousel .detalles .box span {
-    font-size: 1.8em;
-  }
-
-  #ingenieriaCarousel .box .title {
+  #ingenieriaCarousel .glide__slide .box .title {
     font-size: 1.2em;
   }
 
-  #ingenieriaCarousel .box .subtitle {
-    font-size: 0.7em;
+  #ingenieriaCarousel .glide__slide .box .box ul li {
+    font-size: 1em;
+  }
+
+  #ingenieriaCarousel .glide__slide.detalles .box span {
+    font-size: 2.5em;
+  }
+
+  #ingenieriaCarousel .glide__slide.conceptual .box span {
+    font-size: 5em;
+  }
+
+  #ingenieriaCarousel .glide__slide.basica .box span {
+    font-size: 2.3em;
   }
 }
 .polizaSection {
@@ -1704,13 +1924,32 @@ footer #piedepagina p {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-gap: 20px;
+  max-width: 720px;
+  align-items: center;
 }
 
-.polizaSection .container .iconContainer {
+.polizaSection .container .icon {
   font-size: 5em;
   text-align: center;
 }
 
+.polizaSection .container p {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 700px) {
+  .polizaSection .container {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .polizaSection .container .icon {
+    font-size: 2.5em;
+  }
+
+  .polizaSection .container p {
+    font-size: 1em;
+  }
+}
 /*ANIMATIONS*/
 @-webkit-keyframes -amp-start {
   from {
@@ -2032,12 +2271,52 @@ footer #piedepagina p {
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes sistemasLines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes sistemasLines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes sistemasLines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes sistemasLines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sistemasLines {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes sistemasMove {
   from {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 4px);
+    transform: translate(0, -10px);
   }
 }
 @-moz-keyframes sistemasMove {
@@ -2045,7 +2324,7 @@ footer #piedepagina p {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 4px);
+    transform: translate(0, -10px);
   }
 }
 @-ms-keyframes sistemasMove {
@@ -2053,7 +2332,7 @@ footer #piedepagina p {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 4px);
+    transform: translate(0, -10px);
   }
 }
 @-o-keyframes sistemasMove {
@@ -2061,7 +2340,7 @@ footer #piedepagina p {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 4px);
+    transform: translate(0, -10px);
   }
 }
 @keyframes sistemasMove {
@@ -2069,7 +2348,7 @@ footer #piedepagina p {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 4px);
+    transform: translate(0, -10px);
   }
 }
 @-webkit-keyframes seguridad {
