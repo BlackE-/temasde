@@ -1261,12 +1261,13 @@ footer #piedepagina p {
 #nosotrosSection .glide__slide .box .title {
   font-size: 1.5em;
   font-weight: 700;
-  margin: 0;
+  margin: 10px 0;
 }
 
 #nosotrosSection .glide__slide .box ul {
   padding: 0;
   max-width: 200px;
+  margin: 0;
 }
 
 #nosotrosSection .glide__slide .box ul li {
@@ -1392,6 +1393,10 @@ footer #piedepagina p {
   font-size: 3em;
 }
 
+#sectoresSection .box2 ul {
+  padding: 0;
+}
+
 #sectoresSection .box2 ul li {
   text-align: left;
   font-size: 0.9em;
@@ -1464,8 +1469,8 @@ footer #piedepagina p {
 
 #serviciosSection .serviciosBox .box p {
   font-weight: 700;
-  margin: 0;
   font-size: 1.5em;
+  margin: 10px 0;
 }
 
 #serviciosSection .serviciosBox .box ul {
@@ -1810,11 +1815,13 @@ footer #piedepagina p {
 
 #ingenieriaCarousel .glide__slide .box .title {
   font-size: 1.5em;
-  margin: 0;
+  margin: 10px 0;
+  line-height: 30px;
 }
 
 #ingenieriaCarousel .glide__slide .box ul {
   padding: 0;
+  margin: 0;
 }
 
 #ingenieriaCarousel .glide__slide .box ul li {
