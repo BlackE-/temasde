@@ -9,7 +9,7 @@
 		<section class="firstSection" id="nosotrosFirstSection">
 			<div class="container">
 				<div class="firstSectionContainer">
-					<h1><b><span>Atendemos tus </span><span> necesidades en </span></b><span> sistemas inteligentes</span></h1>
+					<h1><span>Atendemos tus </span><span> necesidades en </span> sistemas inteligentes</h1>
 					<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
 				</div>
 			</div>

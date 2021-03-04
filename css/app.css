@@ -511,7 +511,7 @@ footer #piedepagina p {
   animation: show2 1.5s cubic-bezier(0.42, 0, 0.02, 1.02);
 }
 
-.firstSection h1 b {
+.firstSection h1 span {
   font-size: 2em;
   display: block;
   transition: font-size 300ms ease-out;
@@ -556,7 +556,7 @@ footer #piedepagina p {
     max-width: 300px;
   }
 
-  .firstSection h1 b {
+  .firstSection h1 span {
     font-size: 1.5em;
   }
 }

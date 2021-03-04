@@ -8,7 +8,7 @@
 		<?php include('header.php');?>
 		<section class="firstSection" id="serviciosFirstSection">
 			<div class="container">
-				<h1><b><span>Desde el</span><br><span> diseño hasta </span></b><span> la implementación</span></h1>
+				<h1><span>Desde el</span><span> diseño hasta </span> la implementación</h1>
 				<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
 			</div>
 		</section>

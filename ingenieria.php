@@ -9,7 +9,7 @@
 		<section class="firstSection" id="ingenieriaFirstSection">
 			<div class="container">
 				<div class="firstSectionContainer">
-					<h1><b><span>Atendemos las</span><span>  necesidades</span></b><span>de las edificaciones</span><span> e industria</span></h1>
+					<h1><span>Atendemos las</span><span>  necesidades</span>de las edificaciones<br> e industria</h1>
 					<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
 				</div>
 			</div>
@@ -20,14 +20,14 @@
 				<p class="animate subtitle">Desarrollamos <b>Ingeniería Conceptual, Básica y de Detalle</b> en todos los proyectos.</p>
 			</div>
 			<div class="container" id="ingenieriaGrid">
-				<div class="box basica">
+				<div class="animate box basica">
 					<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
 					<p class="title">Ingeniería <br><b>Básica</b></p>
 					<ul>
 						<li>Bases de diseño</li>
 					</ul>
 				</div>
-				<div class="box detalles">
+				<div class="animate box detalles">
 					<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
 					<p class="title">Ingeniería de <br><b>detalles</b></p>
 					<ul>
@@ -42,7 +42,7 @@
 						<li>Catálogos de conceptos</li>
 					</ul>
 				</div>
-				<div class="box conceptual">
+				<div class="animate box conceptual">
 					<span class="icon icon-temasde-ingenieria_conceptual"></span>
 					<p class="title">Ingeniería <br> <b>Conceptual</b></p>
 					<ul>

@@ -9,7 +9,7 @@
 		<section class="firstSection" id="indexSection">
 			<div class="container">
 				<div class="firstSectionContainer">
-					<h1><b><span>Diseñamos e</span><span> integramos </span><span>soluciones</span></b><span> de clase mundial</span></h1>
+					<h1><span>Diseñamos e integramos soluciones</span> de clase mundial</h1>
 					<button class="goToFooter" id="goToFooter">¡ME INTERESA!</button>
 				</div>
 			</div>
