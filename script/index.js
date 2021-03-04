@@ -1,7 +1,6 @@
 	const carouselIngenierias = document.querySelector('#ingenieriaSection .glide');
 	const resizecarouselIngenierias = () =>{
-		(window.innerWidth > 460) ? carouselIngenierias.style.height = "350px" : carouselIngenierias.style.height = "200px";
-		(window.innerWidth > 460) ? console.log('350') : console.log('200');
+		(window.innerWidth > 460) ? carouselIngenierias.style.height = "250px" : carouselIngenierias.style.height = "200px";
 	}
 
 	setTimeout(resizecarouselIngenierias,1000);

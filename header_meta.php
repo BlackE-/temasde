@@ -1,7 +1,7 @@
     <?php $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T + D Ingeniería</title>
+    <title>T + D Ingeniería</title>
     <meta name="description" content="Diseñamos e integramos soluciones de clase mundial.">
     <meta name="keywords" content="t+d, Ingeniería, Soluciones, clase mundial">
     <meta name="author" content="@studio_sub">
@@ -88,9 +88,6 @@
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="script/intl-tel-input/css/intlTelInput.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/glide.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <link rel="stylesheet" type="text/css" href="css/app.css" >

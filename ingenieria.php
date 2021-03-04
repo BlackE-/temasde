@@ -19,71 +19,39 @@
 				<h2 class="animate title"><b>INGENIERÍA</b></h2>
 				<p class="animate subtitle">Desarrollamos <b>Ingeniería Conceptual, Básica y de Detalle</b> en todos los proyectos.</p>
 			</div>
-			<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" loop="1" layout="fixed-height" width="auto" height="350"  visible-count="1.1" advance-count="1">
-					<div>
-                        <div class="glide__slide basica">
-                            <div class="box">
-    							<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-    							<p class="title">Ingeniería <br><b>Básica</b></p>
-    							<ul>
-    								<li>Bases de diseño</li>
-    							</ul>
-    						</div>
-    					</div>
-                    </div> 
-			        <div>
-    			        <div class="glide__slide conceptual">
-    		                <div class="box">
-    							<span class="icon icon-temasde-ingenieria_conceptual"></span>
-    							<p class="title">Ingeniería <br> <b>Conceptual</b></p>
-    							<ul>
-    								<li>Bases de diseño</li>
-    								<li>Arquitecturas y/o diagramas sistema de control y comunicaciones</li>
-    								<li>Rutas de comunicación y/o eléctricas de control (preliminar)</li>
-    							</ul>
-    						</div>
-    		            </div>
-		            </div>
-                    <div>
-                        <div class="glide__slide detalles">
-                            <div class="box">
-    							<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-    							<p class="title">Ingeniería de <br><b>detalles</b></p>
-    							<ul>
-    								<li>Arquitecturas y/o diagramas sistema de control comunicaciones</li>
-    								<li>Listado de equipos</li>
-    								<li>Hojas de datos de equipos</li>
-    							</ul>
-    						</div>
-    					</div>
-                    </div>    
-                    <div>
-                        <div class="glide__slide detalles">
-                            <div class="box">
-    							<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-    							<p class="title">Ingeniería de <br><b>detalles</b></p>
-    							<ul>
-    								<li>Memorias de cálculo</li>
-    								<li>Listas de materiales</li>
-    								<li>Rutas de comunicación y/o eléctricas de control</li>		
-    							</ul>
-    						</div>
-    					</div>
-                    </div>    
-                    <div>
-                        <div class="glide__slide detalles">
-                            <div class="box">
-    							<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-    							<p class="title">Ingeniería de <br><b>detalles</b></p>
-    							<ul>
-    								<li>Cédula de cableado</li>
-    								<li>Especificaciones de equipos y materiales</li>
-    								<li>Catálogos de conceptos</li>
-    							</ul>
-    						</div>
-    					</div>
-                    </div>
-			    </amp-base-carousel>
+			<div class="container" id="ingenieriaGrid">
+				<div class="box basica">
+					<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+					<p class="title">Ingeniería <br><b>Básica</b></p>
+					<ul>
+						<li>Bases de diseño</li>
+					</ul>
+				</div>
+				<div class="box detalles">
+					<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+					<p class="title">Ingeniería de <br><b>detalles</b></p>
+					<ul>
+						<li>Arquitecturas y/o diagramas sistema de control comunicaciones</li>
+						<li>Listado de equipos</li>
+						<li>Hojas de datos de equipos</li>
+						<li>Memorias de cálculo</li>
+						<li>Listas de materiales</li>
+						<li>Rutas de comunicación y/o eléctricas de control</li>
+						<li>Cédula de cableado</li>
+						<li>Especificaciones de equipos y materiales</li>
+						<li>Catálogos de conceptos</li>
+					</ul>
+				</div>
+				<div class="box conceptual">
+					<span class="icon icon-temasde-ingenieria_conceptual"></span>
+					<p class="title">Ingeniería <br> <b>Conceptual</b></p>
+					<ul>
+						<li>Bases de diseño</li>
+						<li>Arquitecturas y/o diagramas sistema de control y comunicaciones</li>
+						<li>Rutas de comunicación y/o eléctricas de control (preliminar)</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<section class="fraseSection" id="frase_ingenieria">
 			<div class="container">

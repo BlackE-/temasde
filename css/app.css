@@ -51,7 +51,7 @@ header #logoContainer .icon-temasde_logo_with_letters {
   transition: font-size 300ms ease-in-out;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   header #logoContainer .icon-temasde_logo_with_letters {
     font-size: 3em;
   }
@@ -183,7 +183,7 @@ header #menuDesktop a:hover:after {
     grid-gap: 20px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   header #menuDesktop {
     display: none;
   }
@@ -200,7 +200,7 @@ header #menuIconContainer {
   animation: show 1s ease-out;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   header #menuIconContainer {
     display: grid;
   }
@@ -348,7 +348,7 @@ footer .container .leftFooter .icon {
   font-size: 4em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   footer .container .leftFooter {
     text-align: center;
   }
@@ -424,7 +424,7 @@ footer .container .rightFooter form input[type=submit]:hover {
   box-shadow: 5px 5px 0px #949488;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   footer #footerBox {
     display: grid;
     grid-template-columns: 1fr;
@@ -544,7 +544,7 @@ footer #piedepagina p {
   color: #d7d7d7;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .firstSection {
     background-position: 0;
     background-size: cover;
@@ -610,7 +610,7 @@ footer #piedepagina p {
   font-size: 5em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .secondSection {
     padding: 50px 0;
   }
@@ -651,6 +651,10 @@ footer #piedepagina p {
   padding: 0 0 100px 0;
 }
 
+#serviciosSectionIndex .title {
+  text-align: center;
+}
+
 #serviciosSectionIndex .gridServicios {
   margin: 0 auto;
   display: grid;
@@ -689,7 +693,7 @@ footer #piedepagina p {
   border: 3px #1c1c2c dashed;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   #serviciosSectionIndex .gridServicios {
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -888,7 +892,7 @@ footer #piedepagina p {
   font-size: 3.6em !important;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   #serviciosSectionIndex .gridServicios .sistemas svg {
     width: 65px;
   }
@@ -1018,7 +1022,7 @@ footer #piedepagina p {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .fraseSection {
     padding: 50px 0;
     display: grid;
@@ -1069,17 +1073,18 @@ footer #piedepagina p {
 #ingenieriaSection .glide__slide {
   text-align: center;
   border-radius: 25px;
-  margin: 0 50px;
+  margin: 0 25px;
+  overflow: hidden;
 }
 
 #ingenieriaSection .glide__slide .box {
   width: 90%;
-  height: 300px;
+  height: 200px;
   margin: 0 auto;
   max-width: 400px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-content: center;
   text-align: left;
@@ -1088,6 +1093,7 @@ footer #piedepagina p {
 #ingenieriaSection .glide__slide .box span {
   grid-row-start: 1;
   grid-row-end: 3;
+  align-self: center;
 }
 
 #ingenieriaSection .glide__slide .box p {
@@ -1096,7 +1102,7 @@ footer #piedepagina p {
 }
 
 #ingenieriaSection .glide__slide .box .title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -1106,7 +1112,7 @@ footer #piedepagina p {
 
 #ingenieriaSection .glide__slide .box .subtitle {
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 1.2em;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -1119,7 +1125,7 @@ footer #piedepagina p {
 
 #ingenieriaSection .glide__slide.detalles .box span {
   color: #1d1d3b;
-  font-size: 3em;
+  font-size: 2.3em;
 }
 
 #ingenieriaSection .glide__slide.detalles .title {
@@ -1136,7 +1142,7 @@ footer #piedepagina p {
 
 #ingenieriaSection .glide__slide.conceptual .box span {
   color: #ffffff;
-  font-size: 7em;
+  font-size: 5em;
 }
 
 #ingenieriaSection .glide__slide.conceptual .title {
@@ -1153,7 +1159,7 @@ footer #piedepagina p {
 
 #ingenieriaSection .glide__slide.basica .box span {
   color: #1d1d3b;
-  font-size: 2.8em;
+  font-size: 2.2em;
 }
 
 #ingenieriaSection .glide__slide.basica .title {
@@ -1166,11 +1172,20 @@ footer #piedepagina p {
 
 @media only screen and (max-width: 900px) {
   #ingenieriaSection .glide__slide {
-    margin: 0 25px;
+    margin: 0 15px;
   }
 
   #ingenieriaSection .glide__slide .box .title {
     font-size: 1.5em !important;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #ingenieriaSection .glide__slide {
+    overflow: unset;
+  }
+
+  #ingenieriaSection .glide__slide .box .title {
+    font-size: 1.2em !important;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -1185,8 +1200,8 @@ footer #piedepagina p {
   }
 
   #ingenieriaSection .glide__slide .box {
-    grid-template-columns: 85px 1fr;
-    height: 150px;
+    height: 150px !important;
+    grid-gap: 15px;
   }
 
   #ingenieriaSection .glide__slide .box .title {
@@ -1231,7 +1246,7 @@ footer #piedepagina p {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   #clientesSection {
     padding: 0 0 25px 0;
   }
@@ -1492,7 +1507,7 @@ footer #piedepagina p {
   border: 3px #1c1c2c dashed;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .animeDerecha {
     transform: translate(-50px, 0);
   }
@@ -1694,7 +1709,7 @@ footer #piedepagina p {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .serviciosBox .automatizacion .icon {
     font-size: 5.3em !important;
   }
@@ -1881,15 +1896,6 @@ footer #piedepagina p {
   color: #020102;
 }
 
-#ingenieriaCarousel .glide__bullets {
-  display: none;
-}
-
-@media only screen and (max-width: 900px) {
-  #ingenieriaCarousel .glide__bullets {
-    display: block;
-  }
-}
 @media only screen and (max-width: 550px) {
   #ingenieriaCarousel .glide__slide {
     margin: 0 25px;
@@ -1944,7 +1950,7 @@ footer #piedepagina p {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .polizaSection .container {
     grid-template-columns: 50px 1fr;
   }
@@ -1955,6 +1961,133 @@ footer #piedepagina p {
 
   .polizaSection .container p {
     font-size: 1em;
+  }
+}
+#ingenieriaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 50px;
+}
+
+#ingenieriaGrid .box {
+  width: calc(100% - 40px);
+  border-radius: 25px;
+  padding: 20px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#ingenieriaGrid .box .title {
+  margin: 0;
+  font-size: 2em;
+}
+
+#ingenieriaGrid .box ul {
+  text-align: left;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 25px 0 0 0;
+}
+
+#ingenieriaGrid .box.detalles {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 2px #1d1d3b dashed;
+}
+
+#ingenieriaGrid .box.detalles .title {
+  color: #1d1d3b;
+}
+
+#ingenieriaGrid .box.detalles span {
+  color: #1d1d3b;
+  font-size: 2.5em;
+}
+
+#ingenieriaGrid .box.detalles .title {
+  color: #1d1d3b;
+}
+
+#ingenieriaGrid .box.detalles ul li {
+  color: #1d1d3b;
+}
+
+#ingenieriaGrid .box.conceptual {
+  background: #1d1d3b;
+}
+
+#ingenieriaGrid .box.conceptual span {
+  color: #ffffff;
+  font-size: 5em;
+}
+
+#ingenieriaGrid .box.conceptual .title {
+  color: #ffffff;
+}
+
+#ingenieriaGrid .box.conceptual ul li {
+  color: #ffffff;
+}
+
+#ingenieriaGrid .box.basica {
+  background: #d7d7d7;
+}
+
+#ingenieriaGrid .box.basica span {
+  color: #1d1d3b;
+  font-size: 2.3em;
+}
+
+#ingenieriaGrid .box.basica .title {
+  color: #020102;
+}
+
+#ingenieriaGrid .box.basica ul li {
+  color: #020102;
+}
+
+@media only screen and (max-width: 770px) {
+  #ingenieriaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    grid-gap: 25px;
+  }
+
+  #ingenieriaGrid .box .title {
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0;
+  }
+
+  #ingenieriaGrid .box.detalles {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #ingenieriaGrid .box .title {
+    font-size: 1.2em;
+  }
+
+  #ingenieriaGrid .box.detalles span {
+    font-size: 2.2em;
+  }
+
+  #ingenieriaGrid .box.conceptual span {
+    font-size: 4em;
+  }
+
+  #ingenieriaGrid .box.basica span {
+    font-size: 2em;
   }
 }
 /*ANIMATIONS*/
