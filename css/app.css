@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 body {
   scroll-behavior: smooth;
-  font: 100% "Space Mono", monospace;
+  font-family: "Space Mono", monospace;
   color: #1c1c2c;
   margin: 0;
   padding: 0;
