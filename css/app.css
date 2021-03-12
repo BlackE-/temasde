@@ -1181,6 +1181,11 @@ footer #piedepagina p {
   }
 }
 @media only screen and (max-width: 770px) {
+  #ingenieriaSection .container {
+    max-width: none;
+    width: 100%;
+  }
+
   #ingenieriaSection .glide__slide {
     overflow: unset;
   }
@@ -1983,16 +1988,12 @@ footer #piedepagina p {
 
 #ingenieriaGrid .box .title {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin: 20px 0;
 }
 
 #ingenieriaGrid .box ul {
   text-align: left;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin: 25px 0 0 0;
 }
 
 #ingenieriaGrid .box.detalles {
@@ -2062,7 +2063,7 @@ footer #piedepagina p {
   }
 
   #ingenieriaGrid .box .title {
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: left;
     margin: 0;
   }

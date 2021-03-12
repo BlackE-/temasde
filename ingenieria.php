@@ -22,14 +22,14 @@
 			<div class="container" id="ingenieriaGrid">
 				<div class="animate box basica">
 					<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-					<p class="title">Ingeniería <br><b>Básica</b></p>
+					<p class="title"><b>Ingeniería Básica</b></p>
 					<ul>
 						<li>Bases de diseño</li>
 					</ul>
 				</div>
 				<div class="animate box detalles">
 					<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-					<p class="title">Ingeniería de <br><b>detalles</b></p>
+					<p class="title"><b>Ingeniería de <br>detalles</b></p>
 					<ul>
 						<li>Arquitecturas y/o diagramas sistema de control comunicaciones</li>
 						<li>Listado de equipos</li>
@@ -44,7 +44,7 @@
 				</div>
 				<div class="animate box conceptual">
 					<span class="icon icon-temasde-ingenieria_conceptual"></span>
-					<p class="title">Ingeniería <br> <b>Conceptual</b></p>
+					<p class="title"><b>Ingeniería Conceptual</b></p>
 					<ul>
 						<li>Bases de diseño</li>
 						<li>Arquitecturas y/o diagramas sistema de control y comunicaciones</li>

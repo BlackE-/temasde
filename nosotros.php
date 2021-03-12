@@ -21,6 +21,7 @@
 			</div>
 			<div class="animate glide peek">
 			    <amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" loop="1" layout="fixed-height" width="auto" height="350"  visible-count="1.1" advance-count="1">
+			    <!-- <amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="350" visible-count="(min-width: 870px) 3, 1" advance-count="(min-width: 870px) 3, 1"> -->
                 	<div>
                         <div class="glide__slide detalles">
 							<div class="box ">

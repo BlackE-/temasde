@@ -111,8 +111,8 @@
 		<section id="ingenieriaSection">
 			<div class="container">
 				<h2 class="animate">INGENIERÍA</h2>
-			</div>
-			<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" loop="1" layout="fixed-height" width="auto" height="400" visible-count="1.1" advance-count="1">
+			
+				<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="250" visible-count="(min-width: 770px) 3, 1" advance-count="(min-width: 770px) 3, 1">
 	                <div>
 	                    <div class="glide__slide conceptual"> 
 	                        <a href="ingenieria?conceptual">
@@ -147,6 +147,7 @@
 	                    </div>
 	                </div>
 	            </amp-base-carousel>
+	        </div>
 		</section>
 	</main>
 	<?php include('footer.php');?>

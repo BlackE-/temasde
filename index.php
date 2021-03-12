@@ -96,42 +96,44 @@
 			</div>
 		</section>
 		<section id="ingenieriaSection">
-			<h2 class="animate">INGENIERÍA</h2>
-			<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="250" visible-count="(min-width: 770px) 3, 1" advance-count="(min-width: 770px) 3, 1">
-                <div>
-                    <div class="glide__slide conceptual"> 
-                        <a href="ingenieria?conceptual">
-							<div class="box">
-								<span class="icon icon-temasde-ingenieria_conceptual"></span>
-								<p class="title">Ingeniería Conceptual</p>
-								<p class="subtitle">CONOCE MÁS</p>
-							</div>
-						</a>
+			<div class="container">
+				<h2 class="animate">INGENIERÍA</h2>
+				<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="250" visible-count="(min-width: 770px) 3, 1" advance-count="(min-width: 770px) 3, 1">
+	                <div>
+	                    <div class="glide__slide conceptual"> 
+	                        <a href="ingenieria?conceptual">
+								<div class="box">
+									<span class="icon icon-temasde-ingenieria_conceptual"></span>
+									<p class="title">Ingeniería Conceptual</p>
+									<p class="subtitle">CONOCE MÁS</p>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div>
-                    <div class="glide__slide detalles">
-                        <a href="ingenieria?detalles">
-							<div class="box">
-								<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-								<p class="title">Ingeniería de detalles</p>
-								<p class="subtitle">CONOCE MÁS</p>
-							</div>
-						</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="glide__slide basica">
-                        <a href="ingenieria?basica">
-							<div class="box">
-								<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-								<p class="title">Ingeniería <br>Básica</p>
-								<p class="subtitle">CONOCE MÁS</p>
-							</div>
-						</a>
-                    </div>
-                </div>
-            </amp-base-carousel>
+					<div>
+	                    <div class="glide__slide detalles">
+	                        <a href="ingenieria?detalles">
+								<div class="box">
+									<span class="icon icon-temasde-ingenieria_de_detalle"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+									<p class="title">Ingeniería de detalles</p>
+									<p class="subtitle">CONOCE MÁS</p>
+								</div>
+							</a>
+	                    </div>
+	                </div>
+	                <div>
+	                    <div class="glide__slide basica">
+	                        <a href="ingenieria?basica">
+								<div class="box">
+									<span class="icon icon-temasde-ingenieria_basica"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+									<p class="title">Ingeniería <br>Básica</p>
+									<p class="subtitle">CONOCE MÁS</p>
+								</div>
+							</a>
+	                    </div>
+	                </div>
+	            </amp-base-carousel>
+	        </div>
 		</section>
 		<section id="clientesSection">
 			<div class="container">
