@@ -20,48 +20,47 @@
 				<p class="animate subtitle">Contamos con <b>el mejor equipo de ingeniería,</b> especialistas en:</p>
 			</div>
 			<div class="animate glide peek">
-			    <amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" loop="1" layout="fixed-height" width="auto" height="350"  visible-count="1.1" advance-count="1">
-			    <!-- <amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="350" visible-count="(min-width: 870px) 3, 1" advance-count="(min-width: 870px) 3, 1"> -->
-                	<div>
-                        <div class="glide__slide detalles">
-							<div class="box ">
-								<span class="icon icon-temasde-user_general"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-								<p class="title"></p>
-								<ul>
-									<li>Tuberías</li>
-									<li>Hidrosanitarias</li>
-									<li>Mecánica</li>
-									<li>Eléctrica</li>
-								</ul>
-							</div>
+					<amp-base-carousel class="animate glide" auto-advance="true" auto-advance-interval="3000" id="carousel-1" layout="fixed-height" loop="1" width="auto" height="350" visible-count="(min-width: 870px) 3, 1" advance-count="(min-width: 870px) 3, 1">
+	                	<div>
+	                        <div class="glide__slide detalles">
+								<div class="box ">
+									<span class="icon icon-temasde-user_general"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+									<p class="title"></p>
+									<ul>
+										<li>Tuberías</li>
+										<li>Hidrosanitarias</li>
+										<li>Mecánica</li>
+										<li>Eléctrica</li>
+									</ul>
+								</div>
+					        </div>
+					    </div>
+					    <div>
+	                        <div class="glide__slide conceptual">
+								<div class="box ">
+									<span class="icon icon-temasde-user_ingeniera"></span>
+									<p class="title">INGENIERÍA</p>
+									<ul>
+										<li>Control y automatización</li>
+										<li>Telecomunicaciones</li>
+									</ul>
+								</div>
+					        </div>
 				        </div>
-				    </div>
-				    <div>
-                        <div class="glide__slide conceptual">
-							<div class="box ">
-								<span class="icon icon-temasde-user_ingeniera"></span>
-								<p class="title">INGENIERÍA</p>
-								<ul>
-									<li>Control y automatización</li>
-									<li>Telecomunicaciones</li>
-								</ul>
-							</div>
-				        </div>
-			        </div>
-			        <div>
-				        <div class="glide__slide basica">
-							<div class="box ">
-								<span class="icon icon-temasde-user_arquitecto"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-								<p class="title">ARQUITECTOS</p>
-								<ul>
-									<li>Diseñadores y Modeladores en REVIT</li>
-								</ul>
-								
-							</div>
-				        </div>
-				    </div>
-			      </amp-base-carousel>
-			    </div>
+				        <div>
+					        <div class="glide__slide basica">
+								<div class="box ">
+									<span class="icon icon-temasde-user_arquitecto"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+									<p class="title">ARQUITECTOS</p>
+									<ul>
+										<li>Diseñadores y Modeladores en REVIT</li>
+									</ul>
+									
+								</div>
+					        </div>
+					    </div>
+			      	</amp-base-carousel>
+			    
 		    </div>
 		</section>
 
